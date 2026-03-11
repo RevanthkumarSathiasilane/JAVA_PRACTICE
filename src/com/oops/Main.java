@@ -25,6 +25,18 @@ public class Main {
         System.out.println(revanth.rno);
         System.out.println(revanth.name);
         System.out.println(revanth.marks);
+
+        Student random = new Student(revanth);
+        System.out.println(random.marks);
+
+        Student random2 = new Student();
+        System.out.println(random2.name);
+
+        Student one = new Student();
+        Student two = one;
+        one.name = "Something Something";
+        System.out.println(two.name);
+
     }
 }
 //create a class
@@ -43,10 +55,14 @@ public class Main {
           void changeName(String newName){
                name = newName;
           }
+          Student (Student other){
+               this.name = other.name;
+               this.rno = other.rno;
+               this.marks = other.marks;
+          }
           Student(){
-              this.rno = 13;
-              this.name = "Revanth";
-              this.marks=84.3f;
+              //this is how you call a constructor from another constructor!!
+              this(13,"Default person",100.0f);
           }
           Student(int rno, String name, float marks){
               this. rno = rno;
