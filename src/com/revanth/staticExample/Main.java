@@ -12,11 +12,11 @@ public class Main {
 
 
     }
-    static void fun(){
-        greeting();// you cant use this, because it requires an instance
-        //but the function you are using it in does not depend on instances.
-
-    }
+//    static void fun(){
+//        greeting();// you cant use this, because it requires an instance
+//        //but the function you are using it in does not depend on instances.
+//
+//    }
     //we know that something which is not static, belongs to an object
      void greeting(){
         System.out.println("Hello World!!");
