@@ -1,16 +1,19 @@
 package com.generics;
 
-import
-        java.util.Arrays;
-import java.util.Scanner;
+import java.util.*;
 
-public class CustomGenericsArrayList<T> {
+public class WildCardExample<T extends Number> {//here T should either be Number or its subclasses
     private Object[] data;
     private static int DEFAULT_SIZE = 10;
     private int size = 0;//also working as index value;
 
-    public CustomGenericsArrayList(){
+    public WildCardExample(){
         this.data = new Object[DEFAULT_SIZE];
+    }
+    public void getList(List<Number> l1){
+        //do something
+        // List<Number> l1 - here you can only pass numbers
+        // List<? extends Number> l1 - here you can pass number and its Subclasses(float,double,etc..)
     }
     public void add(T num){
         if(isFull()){
@@ -61,7 +64,7 @@ public class CustomGenericsArrayList<T> {
 //            list.add(sc.nextInt());
 //        }
 //        System.out.println(list);
-        CustomGenericsArrayList<String> list1 = new CustomGenericsArrayList<>();
-        list1.add("STring");
+        WildCardExample<Number> list1 = new WildCardExample<>();
+        list1.add(28);
     }
 }
