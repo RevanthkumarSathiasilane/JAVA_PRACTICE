@@ -12,6 +12,11 @@ public class Student implements Comparable<Student> {
     }
 
     @Override
+    public String toString() {
+        return marks+"";
+    }
+
+    @Override
     public int compareTo(@NotNull Student o) {
         int diff = (int)(this.marks) - (int) (o.marks);
         //if diff == 0 : means both are equal
