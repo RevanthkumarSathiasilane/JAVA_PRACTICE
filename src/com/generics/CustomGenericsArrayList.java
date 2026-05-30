@@ -1,7 +1,6 @@
 package com.generics;
 
-import
-        java.util.Arrays;
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class CustomGenericsArrayList<T> {

@@ -25,7 +25,7 @@ public class Main {
 
 //        if(revanth.compareTo(deepz) < 0) {
 //            System.out.println("Deepz has more marks");
-//        }
+//        }p
 
 
     }

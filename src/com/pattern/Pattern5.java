@@ -5,9 +5,9 @@ public class Pattern5 {
         pattern5(5);
     }
     static void pattern5(int n){
-        for(int row=1;row< 2*n;row++){
-            int col = row>n ? 2*n-row :row;
-            for(int c = 1;c<=col;c++){
+        for(int row = 0; row<2*n; row++){
+            int c = (row>5)?2*n-row:row;
+            for(int col = 1;col<=c;col++){
                 System.out.print("* ");
             }
             System.out.println();
