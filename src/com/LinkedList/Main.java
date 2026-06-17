@@ -22,6 +22,8 @@ public class Main {
         list.insertFirst(8);
         list.insertFirst(9);
         list.insertFirst(10);
+        list.insertLast(99);
+        list.insert(8,19);
         list.display();
     }
 }
