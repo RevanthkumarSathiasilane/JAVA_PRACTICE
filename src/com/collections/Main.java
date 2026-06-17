@@ -4,8 +4,8 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
-        List<Integer> list1 = new ArrayList<>();
-        List<Integer> list2 = new LinkedList<>();
+//        List<Integer> list1 = new ArrayList<>();
+//        List<Integer> list2 = new LinkedList<>();
 //        list2.add(34);
 //        list2.add(78);
 //        list2.add(55);

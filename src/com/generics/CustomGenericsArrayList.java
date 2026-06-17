@@ -8,7 +8,7 @@ public class CustomGenericsArrayList<T> {
     private static int DEFAULT_SIZE = 10;
     private int size = 0;//also working as index value;
 
-    public CustomGenericsArrayList(){
+    public CustomGenericsArrayList(){   
         this.data = new Object[DEFAULT_SIZE];
     }
     public void add(T num){
