@@ -18,12 +18,20 @@ public class Main {
 //        list.display();
 //        list.find(4);
 
-        DLL list = new DLL();
-        list.insertFirst(8);
-        list.insertFirst(9);
-        list.insertFirst(10);
-        list.insertLast(99);
-        list.insert(8,19);
+//        DLL list = new DLL();
+//        list.insertFirst(8);
+//        list.insertFirst(9);
+//        list.insertFirst(10);
+//        list.insertLast(99);
+//        list.insert(8,19);
+//        list.display();
+
+        CLL list = new CLL();
+        list.insert(23);
+        list.insert(3);
+        list.insert(19);
+        list.insert(75);
+        list.delete(19);
         list.display();
     }
 }
