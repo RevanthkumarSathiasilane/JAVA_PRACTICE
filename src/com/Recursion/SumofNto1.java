@@ -6,7 +6,7 @@ public class SumofNto1 {
         System.out.println(add(n));
     }
     static int add(int n){
-        if(n==1) return 1;
+        if(n<=1) return 1;
         return n+add(n-1);
     }
 }
