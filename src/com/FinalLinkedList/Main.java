@@ -26,6 +26,7 @@ public class Main {
         list.insertFirst(2);
         list.insertFirst(1);
         list.insertLast(99);
+        list.insert(2,2);
         list.displayDLL();
     }
 }
