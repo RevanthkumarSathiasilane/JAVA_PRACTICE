@@ -118,5 +118,18 @@ public class SLL {
             this.next = next;
         }
     }
-
+ // Questions:
+    public void duplicates(){
+        Node node = head;
+        while(node.next!=null){
+            if(node.next.value == node.value){
+                node.next = node.next.next;
+                size--;
+            }else{
+                node = node.next;
+            }
+        }
+        tail = node;
+        tail.next = null;
+    }
 }
