@@ -7,6 +7,10 @@ public class SLL {
     public SLL(){
         this.size = 0;
     }
+    //insert using recursion
+
+
+
     public void insertFirst(int value){
         Node node = new Node(value);
         node.next = head;

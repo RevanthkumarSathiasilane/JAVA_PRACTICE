@@ -2,22 +2,15 @@ package com.FinalLinkedList;
 
 public class Main {
     public static void main(String[] args) {
-        /* Singly Linked List
+        //Singly Linked List
         SLL list = new SLL();
-        list.insertFirst(17);
-        list.insertFirst(8);
-        list.insertFirst(1);
-        list.insertFirst(5);
-        list.insertLast(12);
-        list.insert(100,3);
-        System.out.println(list.deleteFirst());
+        list.insertLast(3);
+        list.insertLast(5);
+        list.insertLast(9);
+        list.insertLast(1);
         list.displaySLL();
-        System.out.println(list.deleteLast());
+        list.insertRec(7,3);
         list.displaySLL();
-        System.out.println(list.delete(3));
-        list.displaySLL();
-        System.out.println(list.find(8));
-        */
         /*
         Doubly Linked List:
         DLL list = new DLL();
@@ -31,13 +24,15 @@ public class Main {
         list.displayDLL();
          */
         //Circular Linked List
-        CLL list = new CLL();
-        list.insert(23);
-        list.insert(3);
-        list.insert(19);
-        list.insert(75);
-        list.displayCLL();
-        list.delete(19);
-        list.displayCLL();
+//        CLL list = new CLL();
+//        list.insert(23);
+//        list.insert(3);
+//        list.insert(19);
+//        list.insert(75);
+//        list.displayCLL();
+//        list.delete(19);
+//        list.displayCLL();
+
+
     }
 }
