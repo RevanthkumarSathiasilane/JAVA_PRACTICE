@@ -18,7 +18,8 @@ public class Main {
         list.displaySLL();
         System.out.println(list.find(8));
         */
-        //Doubly Linked List
+        /*
+        Doubly Linked List:
         DLL list = new DLL();
         list.insertFirst(5);
         list.insertFirst(4);
@@ -28,5 +29,15 @@ public class Main {
         list.insertLast(99);
         list.insert(2,2);
         list.displayDLL();
+         */
+        //Circular Linked List
+        CLL list = new CLL();
+        list.insert(23);
+        list.insert(3);
+        list.insert(19);
+        list.insert(75);
+        list.displayCLL();
+        list.delete(19);
+        list.displayCLL();
     }
 }
