@@ -4,14 +4,15 @@ public class Main {
     public static void main(String[] args) {
         //Singly Linked List
         SLL list = new SLL();
-        list.insertLast(1);
-        list.insertLast(1);
-        list.insertLast(1);
-        list.insertLast(2);
-        list.insertLast(4);
-        list.insertLast(4);
+//        list.insertLast(1);
+//        list.insertLast(1);
+//        list.insertLast(1);
+//        list.insertLast(2);
+//        list.insertLast(4);
+//        list.insertLast(4);
         list.displaySLL();
-
+        list.duplicates();
+        list.displaySLL();
         /*
         Doubly Linked List:
         DLL list = new DLL();

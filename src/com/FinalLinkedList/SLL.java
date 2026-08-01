@@ -121,6 +121,7 @@ public class SLL {
  // Questions:
     public void duplicates(){
         Node node = head;
+        if(head == null) return;
         while(node.next!=null){
             if(node.next.value == node.value){
                 node.next = node.next.next;
@@ -131,5 +132,63 @@ public class SLL {
         }
         tail = node;
         tail.next = null;
+    }
+    //Merge Two Sorted list:
+    public static SLL merge(SLL first,SLL second){
+        Node f = first.head;
+        Node s = second.head;
+        SLL ans = new SLL();
+        while(f!=null && s!=null){
+            if(f.value == s.value){
+                ans.insertLast(f.value);
+                ans.insertLast(s.value);
+                f = f.next;
+                s = s.next;
+            }else if(f.value>s.value){
+                ans.insertLast(s.value);
+                s=s.next;
+            }
+            else{
+                ans.insertLast(f.value);
+                f = f.next;
+            }
+        }
+        while(f!=null){
+            ans.insertLast(f.value);
+            f = f.next;
+        }
+        while(s!=null){
+            ans.insertLast(s.value);
+            s = s.next;
+        }
+        return ans;
+    }
+
+    public static void main(String[] args) {
+        SLL list1 = new SLL();
+        SLL list2 = new SLL();
+        list1.insertLast(1);
+        list1.insertLast(2);
+        list1.insertLast(3);
+        list2.insertLast(1);
+        list2.insertLast(3);
+        list2.insertLast(4);
+        list1.displaySLL();
+        list2.displaySLL();
+        SLL list3 = new SLL();
+        list3 = merge(list1,list2);
+        list3.displaySLL();
+//        list.insertLast(1);
+//        list.insertLast(1);
+//        list.insertLast(1);
+//        list.insertLast(2);
+//        list.insertLast(3);
+//        list.insertLast(3);
+//        list.insertLast(3);
+//        list.displaySLL();
+//        list.duplicates();
+//        list.displaySLL();
+
+
     }
 }
