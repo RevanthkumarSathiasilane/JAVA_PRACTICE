@@ -11,11 +11,20 @@ public class CustomStack {
         this.data = new int[size];
     }
     public boolean push(int d){
+        if(isFull()) {
+            System.out.println("Stack is full");
+            return false;
+        }
         ptr++;
         data[ptr] = d;
         return true;
     }
-
+    public boolean isFull(){
+        return ptr == data.length-1;//ptr is at last index;
+    }
+    public boolean isEmpty(){
+        return ptr == -1;//ptr is at last index;
+    }
     public static void main(String[] args) {
         CustomStack stack = new CustomStack(10);
         stack.push(20);
