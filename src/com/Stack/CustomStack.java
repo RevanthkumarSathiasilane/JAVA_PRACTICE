@@ -10,8 +10,10 @@ public class CustomStack {
     public CustomStack(int size) {
         this.data = new int[size];
     }
-    public void push(int d){
-        data[++ptr] = d;
+    public boolean push(int d){
+        ptr++;
+        data[ptr] = d;
+        return true;
     }
 
     public static void main(String[] args) {
