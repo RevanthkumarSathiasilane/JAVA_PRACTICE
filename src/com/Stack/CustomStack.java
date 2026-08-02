@@ -19,11 +19,20 @@ public class CustomStack {
         data[ptr] = d;
         return true;
     }
-    public boolean isFull(){
+    private boolean isFull(){
         return ptr == data.length-1;//ptr is at last index;
     }
-    public boolean isEmpty(){
-        return ptr == -1;//ptr is at last index;
+    private boolean isEmpty(){
+        return ptr == -1;
+    }
+    public int pop() throws Exception{
+        if(isEmpty()){
+            throw new Exception("Cannot pop from an empty stack!!");
+        }
+//        int val = data[ptr];
+//        ptr--;
+//        return val;
+        return data[ptr--];
     }
     public static void main(String[] args) {
         CustomStack stack = new CustomStack(10);
