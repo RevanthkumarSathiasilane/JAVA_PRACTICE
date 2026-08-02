@@ -10,4 +10,12 @@ public class CustomStack {
     public CustomStack(int size) {
         this.data = new int[size];
     }
+    public void push(int d){
+        data[++ptr] = d;
+    }
+
+    public static void main(String[] args) {
+        CustomStack stack = new CustomStack(10);
+        stack.push(20);
+    }
 }
