@@ -34,6 +34,12 @@ public class CustomStack {
 //        return val;
         return data[ptr--];
     }
+    public int peek() throws Exception{
+        if(isEmpty()){
+            throw new Exception("Cannot find peek from an empty stack!!");
+        }
+        return data[ptr];
+    }
     public static void main(String[] args) {
         CustomStack stack = new CustomStack(10);
         stack.push(20);
