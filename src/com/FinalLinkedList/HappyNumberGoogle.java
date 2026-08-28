@@ -12,8 +12,7 @@ public class HappyNumberGoogle {
             slow = findSquare(slow);
             fast = findSquare(findSquare(fast));
         } while (fast != slow);
-        if (slow == 1) return true;
-        return false;
+       return slow == 1;
     }
 
     static int findSquare(int number) {
